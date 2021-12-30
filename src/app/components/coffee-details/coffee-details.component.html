@@ -1,0 +1,17 @@
+<div>
+    <a [routerLink]="['/coffee']" routerLinkActive="router-link-active" class="link-a">Back</a>
+
+<div *ngIf="obj" class="card info-card">
+    <div class="card-header name">
+        {{obj.blend_name}}
+    </div>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item item"><div class="flex-li title">Origin</div><div class="flex-li">{{obj.origin}}</div></li>
+        <li class="list-group-item item"><div class="flex-li title">Variety</div><div class="flex-li">{{obj.variety}}</div></li>
+        <li class="list-group-item item"><div class="flex-li title">Notes</div><div class="flex-li">{{obj.notes}}</div></li>
+        <li class="list-group-item item"><div class="flex-li title">Intensifier</div><div class="flex-li">{{obj.intensifier}}</div></li>
+    </ul>
+</div>
+</div>
+

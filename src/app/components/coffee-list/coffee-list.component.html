@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-light table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">BLEND NAME</th>
+                <th scope="col">ORIGIN</th>
+                <th scope="col">VARIETY</th>
+                <th scope="col">ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of coffees$ | async | paginate: { itemsPerPage: 10, currentPage: p }">
+                <td class="first-child">{{c.blend_name}}</td>
+                <td>{{c.origin}}</td>
+                <td>{{c.variety}}</td>
+                <td><a class="btn btn-info" routerLink="/coffee/{{c.id}}" routerLinkActive="router-link-active" >Details</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

@@ -1,0 +1,29 @@
+.info-card{
+    margin: 5rem;
+}
+span{
+    margin-right: 5rem;
+    display: inline-block;
+    min-width: 20rem;
+}
+.name{
+    font-weight: bold;
+    text-align: center;
+}
+ul .item{
+    display: flex;
+}
+.flex-li{
+    width: 50%;
+}
+.title{
+    font-weight: bold;
+}
+.link-a{
+    margin-left: 5rem;
+    padding: 0.4rem 2rem;
+    text-decoration: none;
+    background-color:#333;
+    color: white;
+    border-radius: 6px;
+}

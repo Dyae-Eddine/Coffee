@@ -1,0 +1,43 @@
+.container{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    text-decoration: none;
+    background-color:#fff;
+    border-radius: 6px;
+}
+@media screen and (max-width:600px) {
+    thead{
+        display: none;
+    }
+    td{
+        display: block;
+        text-align: right;
+    }
+    tr .first-child{
+        --bs-table-accent-bg: #333 !important;
+        color:#fff;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    tr{
+        margin-bottom: 1rem;
+    }
+    td:nth-child(2)::before{
+        content: 'Origin';
+    }
+    td:nth-child(3)::before{
+        content: 'Variety';
+    }
+    td:nth-child(4){
+        text-align: center;
+    }
+    td::before{
+        float: left;
+        margin-right: 3rem;
+        font-weight: bold;
+    }
+}
